@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
+:root{
+    --primary-color: #5ba898;
+    --dark-color: #303030;
+    --gray-color: #4f4f4f;
+    --light-gray-color: #caddd7;
+}
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +32,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
+    padding-top: 1rem;
 }
 .hamburger {
     display: none;
@@ -54,22 +60,87 @@ a {
 .nav-link{
     font-size: 1.6rem;
     font-weight: 400;
-    color: #475569;
+    color: var(--gray-color);
+    position: relative;
+}
+.nav-link:after{
+    display: inline-block;
+    content: "";
+    background-color: var(--primary-color);
+    height: 0.3rem;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: 2.5rem;
+    opacity: 0;
+    transition: all 0.3s ease;
 }
 
 .nav-link:hover{
-    color: #482ff7;
+    color: var(--primary-color);
+}
+.nav-link:hover:after{
+    opacity: 1;
 }
 
 .nav-logo {
     font-size: 2.1rem;
     font-weight: 600;
-    color: #482ff7;
+    color: var(--primary-color);
+}
+/* home section */
+#home{
+    background-image: url('/assets/img/wve.svg');
+    background-size: cover;
+    margin-top: 8rem;
+}
+.home{
+    display: flex;
+    gap: 12rem;
+}
+.home__presentation{
+}
+.home__hello{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.home__name{
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+.home__description{
+    font-size: 1.5rem;
+    color: var(--gray-color);
+    line-height: 2.5rem;
+}
+.home__image-box{
+
+}
+.home__image{
+    width: 100%;
+    height: auto;
+}
+.home__btn{
+    padding: 1.2rem 4rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: .4rem;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 6PX 12px rgba(0, 0, 0, 0.1);
+}
+.home__btn:hover{
+    color: var(--primary-color);
+    background-color: white;
 }
 @media only screen and (max-width: 768px) {
     .container{
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
     .nav-menu {
         position: fixed;
@@ -106,6 +177,11 @@ a {
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .home{
+        flex-direction: column;
+        gap: 0;
     }
 
 }
