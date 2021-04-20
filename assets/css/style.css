@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
 :root{
-    --primary-color: #5ba898;
+    --primary-color: #0cad8d;
     --dark-color: #303030;
     --gray-color: #4f4f4f;
     --light-gray-color: #caddd7;
@@ -10,8 +10,9 @@
 .section-title{
     font-size: 3rem;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 8rem;
     margin-bottom: 8rem;
+    color: var(--primary-color);
 }
 * {
     margin: 0;
@@ -175,6 +176,35 @@ a {
     line-height: 2.5rem;
 }
 .about__btn{
+    padding: 1.2rem 4rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: .4rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 6PX 12px rgba(0, 0, 0, 0.1);
+}
+/* Skills section */
+.skills__content{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+.skills__subtile{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+.skills__text{
+    font-size: 1.5rem;
+    color: var(--gray-color);
+    line-height: 2.5rem;
+}
+.skills__btn{
     padding: 1.2rem 4rem;
     border: none;
     background-color: var(--primary-color);
