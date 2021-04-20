@@ -36,6 +36,7 @@
 html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 li {
@@ -241,12 +242,26 @@ a {
 .contact__form textarea{
     resize: none;
 }
+/* footer */
+#footer{
+    background-color: var(--primary-color);
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    color: white;
+    font-size: 1.2rem;
+}
+#footer span{
+    color: var(--dark-color);
+}
 /* for medium screen */
 @media only screen and (max-width: 992px) {
     .home__image-box{
         justify-content: center;
         align-items: center;
     }
+    
 }
 /* for mobile */
 @media only screen and (max-width: 768px) {
@@ -298,6 +313,19 @@ a {
     }
     .home__image{
         width: 80%;
+    }
+    .skills__content{
+        flex-direction: column;
+    }
+    .works__content{
+        grid-template-columns: 100%;
+        grid-gap: 2rem;
+    }
+    .works__first{
+        grid-row: initial;
+    }
+    .contact__content{
+        flex-direction: column;
     }
 
 }
