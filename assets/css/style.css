@@ -208,6 +208,39 @@ a {
     height: 100%;
 }
 /* contact section */
+.contact__content{
+    display: flex;
+    gap: 8rem;
+}
+.contact__subtile{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+.contact__text{
+    font-size: 1.5rem;
+    color: var(--gray-color);
+    line-height: 2.5rem;
+}
+.contact__form input, .contact__form textarea{
+    padding: 1rem 2rem;
+    margin: 1rem auto;
+    color: var(--primary-color);
+}
+.contact__form input:focus, .contact__form textarea:focus{
+    outline: var(--primary-color);
+}
+.contact__form input.block, .contact__form textarea.block{
+    display: block;
+    width: 100%;
+}
+.contact__form .inline-inputs{
+    display: flex;
+    gap: 1rem;
+}
+.contact__form textarea{
+    resize: none;
+}
 /* for medium screen */
 @media only screen and (max-width: 992px) {
     .home__image-box{
