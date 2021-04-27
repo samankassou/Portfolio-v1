@@ -267,6 +267,17 @@ a {
 #footer span{
     color: var(--dark-color);
 }
+.footer__socials{
+    display: flex;
+}
+.social__icons{
+    margin-left: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+.social__icons .fab{
+    font-size: 2rem;
+}
 /* for medium screen */
 @media only screen and (max-width: 992px) {
     .home__image-box{
