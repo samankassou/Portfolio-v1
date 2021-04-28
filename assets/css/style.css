@@ -27,6 +27,13 @@
     transition: all 0.3s ease;
     box-shadow: 0 6PX 12px rgba(0, 0, 0, 0.1);
 }
+figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
 * {
     margin: 0;
     padding: 0;
@@ -124,11 +131,12 @@ a {
     display: flex;
     gap: 12rem;
 }
-.home__presentation{
-}
 .home__hello{
     font-size: 2rem;
     margin-bottom: 2rem;
+}
+.home__description span{
+    font-size: 2.5rem;
 }
 .home__name{
     font-size: 4rem;
@@ -235,6 +243,26 @@ a {
     color: var(--gray-color);
     line-height: 2.5rem;
 }
+.contact__adresses{
+    margin-top: 4rem;
+}
+.contact__item{
+    display: flex;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    gap: 2rem;
+    align-items: center;
+}
+.contact__item i{
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+.contact__item h4{
+    font-size: 1.2rem;
+}
+.contact__item p{
+    font-size: 1.2rem;
+}
 .contact__form input, .contact__form textarea{
     padding: 1rem 2rem;
     margin: 1rem auto;
@@ -269,6 +297,7 @@ a {
 }
 .footer__socials{
     display: flex;
+    align-items: center;
 }
 .social__icons{
     margin-left: 1rem;
@@ -277,6 +306,7 @@ a {
 }
 .social__icons .fab{
     font-size: 2rem;
+    color: white;
 }
 /* for medium screen */
 @media only screen and (max-width: 992px) {
@@ -350,7 +380,7 @@ a {
     }
     .skills__content{
         flex-direction: column;
-        gap: 3rem;
+        gap: 5rem;
     }
     .works__content{
         grid-template-columns: 100%;
