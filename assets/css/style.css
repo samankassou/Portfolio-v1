@@ -15,6 +15,7 @@
     color: var(--primary-color);
 }
 .btn{
+    display: inline-block;
     padding: 1.2rem 4rem;
     border: none;
     background-color: var(--primary-color);
@@ -212,6 +213,7 @@ a {
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.skill__tecnos figure
 /* Works section */
 .work-box{
     background-color: var(--light-gray-color);
@@ -364,6 +366,9 @@ a {
         gap: 1rem;
         margin-top: 4rem;
     }
+    .home__presentation{
+        margin-bottom: 5rem;
+    }
     .home__image-box{
         margin-top: 5rem;
     }
@@ -381,6 +386,9 @@ a {
     .skills__content{
         flex-direction: column;
         gap: 5rem;
+    }
+    .skill__tecnos figure img{
+        margin-bottom: 2rem;
     }
     .works__content{
         grid-template-columns: 100%;
@@ -400,6 +408,11 @@ a {
     }
     .input{
         width: 100%;
+    }
+    #footer{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 5rem;
     }
 
 }
