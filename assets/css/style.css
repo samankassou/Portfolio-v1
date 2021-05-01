@@ -401,7 +401,10 @@ a {
     }
     .contact__content{
         flex-direction: column;
-        gap: 3rem;
+        gap: 5rem;
+    }
+    .contact__item div{
+        margin-left: 2rem;
     }
     .contact__form .inline-inputs{
         display: flex;
@@ -418,6 +421,10 @@ a {
     }
     .social__icons{
         gap: 3rem;
+    }
+    .social__icons a{
+        display: inline-block;
+        margin-left: 1rem;
     }
 
 }
