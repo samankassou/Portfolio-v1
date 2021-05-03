@@ -405,6 +405,9 @@ a {
     }
     .about__img{
         border-radius: 50%;
+        width: 50%;
+        display: block;
+        margin: auto;
     }
     .skills__content{
         flex-direction: column;
