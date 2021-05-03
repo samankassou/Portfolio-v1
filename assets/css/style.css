@@ -28,6 +28,9 @@
     transition: all 0.3s ease;
     box-shadow: 0 6PX 12px rgba(0, 0, 0, 0.1);
 }
+.toastify{
+    font-size: 1.2rem;
+}
 .form-group{
     display: flex;
     flex-direction: column;

@@ -51,6 +51,14 @@ function sendEmail(e){
     const body = document.querySelector('#body').value;
 
     // reset contact form after send email
+    Toastify({
+        text: "Email envoyé avec succès!",
+        duration: 5000,
+        close:true,
+        gravity:"top",
+        position: "right",
+        backgroundColor: "#4fbe87",
+    }).showToast();
     resetForm();
 
     //window.open(`mailto:samankassoufoulla@gmail.com?name=${name}&subject=${subject}&body=${body}`);
