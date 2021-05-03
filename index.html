@@ -189,11 +189,23 @@
             <h2 class="contact__subtile" data-aos="fade-up" data-aos-duration="900">Message</h2>
             <form>
                 <div class="inline-inputs" data-aos="fade-up" data-aos-duration="900">
-                    <input id="name" class="input" type="text" placeholder="Votre nom" data-aos="fade-up" data-aos-duration="900">
-                    <input id="email" class="input" type="text" placeholder="Votre email" data-aos="fade-up" data-aos-duration="900">
+                    <div class="form-group">
+                        <input id="name" class="input" type="text" placeholder="Votre nom" data-aos="fade-up" data-aos-duration="900">
+                        <span id="name-error" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <input id="email" class="input" type="text" placeholder="Votre email" data-aos="fade-up" data-aos-duration="900">
+                        <span id="email-error" class="error"></span>
+                    </div>
                 </div>
-                <input id="subject" class="input block" type="text" placeholder="Sujet" data-aos="fade-up" data-aos-duration="900">
-                <textarea id="body" class="block" cols="30" rows="10" placeholder="Message" data-aos="fade-up" data-aos-duration="900"></textarea>
+                <div class="form-group">
+                    <input id="subject" class="input block" type="text" placeholder="Sujet" data-aos="fade-up" data-aos-duration="900">
+                    <span id="subject-error" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <textarea id="body" class="block" cols="30" rows="10" placeholder="Message" data-aos="fade-up" data-aos-duration="900"></textarea>
+                    <span id="body-error" class="error"></span>
+                </div>
                 <button id="send-email-btn" class="btn" data-aos="fade-up" data-aos-duration="900" data-aos="fade-up" data-aos-duration="900">Envoyer</button>
             </form>
         </div>

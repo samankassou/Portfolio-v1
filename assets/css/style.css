@@ -28,6 +28,14 @@
     transition: all 0.3s ease;
     box-shadow: 0 6PX 12px rgba(0, 0, 0, 0.1);
 }
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+.form-group .error{
+    color: red;
+    font-size: 1rem;
+}
 figure{
     display: flex;
     flex-direction: column;
@@ -278,6 +286,9 @@ a {
     padding: 1rem 2rem;
     margin: 1rem auto;
     color: var(--primary-color);
+}
+.contact__form input.is-invalid, .contact__form textarea.is-invalid{
+    border: 1px solid red;
 }
 .contact__form input:focus, .contact__form textarea:focus{
     outline: var(--primary-color);
