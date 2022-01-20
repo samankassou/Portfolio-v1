@@ -1,220 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Sam</title>
-    <meta name="description" content="The portfolio of Samankassou, a full-stack web developper, Laravel and Vuejs are Frameworks that I work with">
+    <meta name="description"
+        content="The portfolio of Samankassou, a full-stack web developper, Laravel and Vuejs are Frameworks that I work with">
     <link rel="stylesheet" href="vendor/aos/css/aos.css">
     <link rel="stylesheet" href="vendor/toastify/toastify.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="vendor/fontawesome/css/fontawesome.min.css">
 </head>
+
 <body>
-<div class="wrapper">
-   <div class="container">
-    <header class="header">
-        <nav class="navbar">
-            <a href="/" class="nav-logo">Dr. Sam</a>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">A propos de Moi</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Mes Compétences</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#works" class="nav-link">Mes Réalisations</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <div class="wrapper">
+        <div class="container">
+            <header class="header">
+                <nav class="navbar">
+                    <a href="/" class="nav-logo">S</a>
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">A propos de Moi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#skills" class="nav-link">Mes Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#works" class="nav-link">Mes Réalisations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <!-- home section -->
+        <section class="container home" id="home">
+            <div class="home__presentation">
+                <div id="langChanger"><a href="#" onclick="window.lang.change('en'); return false;">Switch to
+                        English</a> | <a href="#" onclick="window.lang.change('fr'); return false;">Switch
+                        to French</a>
+                </div>
+                <h3 class="home__hello" lang="en">Hello, I am</h3><br>
+                <h1 class="home__name">Sam</h1>
+                <p class="home__description"><span>Web Designer et Développeur web fullstack</span> avec une certaine
+                    préference pour le back-end.
+                    J'aide votre entreprise à avoir une identité numérique.
+                </p>
+                <a target="_blank" href="assets/Samankassou_CV_fr.pdf" class="btn home__btn">Mon CV <i
+                        class="fas fa-download"></i></a>
             </div>
-        </nav>
-    </header>
-   </div>
-   <!-- home section -->
-   <section class="container home" id="home">
-        <div class="home__presentation">
-            <h3 class="home__hello">Bonjour, moi c'est <br></h3>
-            <h1 class="home__name">Sam</h1>
-            <p class="home__description"><span>Web Designer et Développeur web fullstack</span> avec une certaine préference pour le back-end. 
-                J'aide votre entreprise à avoir une identité numérique.
-            </p>
-            <a target="_blank" href="assets/Samankassou_CV.pdf" class="btn home__btn">Mon CV <i class="fas fa-download"></i></a>
-        </div>
-        <div class="home__image-box">
-            <img class="home__image" src="assets/img/home.png" alt="home_img">
-        </div>
-   </section>
-   <!--! home section -->
-</div>
-   <!-- About section -->
-   <section class="container about" id="about">
+            <div class="home__image-box">
+                <img class="home__image" src="assets/img/home.png" alt="home_img">
+            </div>
+        </section>
+        <!--! home section -->
+    </div>
+    <!-- About section -->
+    <section class="container about" id="about">
         <h2 class="about__title section-title" data-aos="fade-left" data-aos-duration="900">A propos de moi</h2>
         <div class="about__content">
             <div class="about__image-box">
-                <img class="about__img" src="assets/img/profile.jpg" alt="avatar" data-aos="zoom-in" data-aos-duration="900">
+                <img class="about__img" src="assets/img/profile.jpg" alt="avatar" data-aos="zoom-in"
+                    data-aos-duration="900">
             </div>
             <div class="about__description" data-aos="fade-up" data-aos-duration="1200">
                 <h1 class="about__name" data-aos="fade-left">Je m'appelle <span>Samankassou Foulla</span></h1>
                 <p class="about__text" data-aos="fade-right">
                     Je suis Camerounais passionné par l'informatique et les nouvelles technologies.
-                    Mes premières expériences avec le code remonte au lycée lors des cours d'introduction à certains langages tels que le HTML, le CSS ou encore le Javascript. Mais ma motivation pour le code commence lors de ma formation à l'IUT de Ngaoundéré, suite aux projets d'intégrations. Le fait de passer des journées et des nuits entières à essayer de résoudre des problèmes c'est vraiment exitant. Après cette formation pour l'obtention d'un DUT en Informatique, je me lance en autodidacte afin de maitriser des technologies qui me permettrons de résoudre de manière rapide et efficace les problèmes quotidiens qui sont soumis à un développeur web.
+                    Mes premières expériences avec le code remonte au lycée lors des cours d'introduction à certains
+                    langages tels que le HTML, le CSS ou encore le Javascript. Mais ma motivation pour le code commence
+                    lors de ma formation à l'IUT de Ngaoundéré, suite aux projets d'intégrations. Le fait de passer des
+                    journées et des nuits entières à essayer de résoudre des problèmes c'est vraiment exitant. Après
+                    cette formation pour l'obtention d'un DUT en Informatique, je me lance en autodidacte afin de
+                    maitriser des technologies qui me permettrons de résoudre de manière rapide et efficace les
+                    problèmes quotidiens qui sont soumis à un développeur web.
                     <b>Le code est devenu aujourd'hui une passion</b>.
-                    
+
                 </p>
-                <a target="_blank" href="assets/Samankassou_CV.pdf" class="btn" data-aos="fade-right">Mon CV   <i class="fas fa-download"></i></a>
+                <a target="_blank" href="assets/Samankassou_CV_fr.pdf" class="btn" data-aos="fade-right">Mon CV <i
+                        class="fas fa-download"></i></a>
             </div>
         </div>
-   </section>
-   <!--! About section -->
-   <!-- Skills section -->
-   <section class="container skills" id="skills">
-    <h2 class="skills__title section-title" data-aos="fade-right" data-aos-duration="900">Mes Compétences</h2>
-    <div class="skills__content">
-        <div class="skills__description">
-            <h2 class="skills__subtile" data-aos="fade" data-aos-duration="900">Compétences</h2>
-            <ol class="gradient-list">
-                <li data-aos="fade" data-aos-duration="900">Donner envie à vos futurs clients avec une galerie photos de vos produits</li>
-                <li data-aos="fade" data-aos-duration="1100">Créer un site moderne et épuré, qui s'adapte à tous les écrans</li>
-                <li data-aos="fade" data-aos-duration="1100">Vous offrir une expérience utilisateur confortable grâce à des animations sur votre site</li>
-                <li data-aos="fade" data-aos-duration="1100">Gérer toutes vos réservations depuis une partie d'administration entièrement personnalisable</li>
-            </ol>
-        </div>
-        <div class="skill__tecnos">
-            <h2 class="skills__subtile" data-aos="fade" data-aos-duration="900">Langages et Technologies</h2>
-            <div class="skills__img-container">
-                <figure data-aos="fade-up" data-aos-duration="900">
-                    <img class="skills__img" src="assets/img/icons8-html-5-480.png" alt="html5_logo">
-                    <figcaption>HTML 5</figcaption>
-                </figure>
-                <figure data-aos="fade-up" data-aos-duration="1100">
-                    <img class="skills__img" src="assets/img/icons8-css3-480.png" alt="css3_logo">
-                    <figcaption>CSS 3</figcaption>
-                </figure>
-                <figure data-aos="fade-up" data-aos-duration="1300">
-                    <img class="skills__img" src="assets/img/icons8-javascript-480.png" alt="Javascript_logo">
-                    <figcaption>Javascript</figcaption>
-                </figure>
-                <figure data-aos="fade-up" data-aos-duration="1500">
-                    <img class="skills__img" src="assets/img/icons8-jquery-500.png" alt="jquery_logo">
-                    <figcaption>JQuery</figcaption>
-                </figure>
-                <figure data-aos="fade-up" data-aos-duration="1700">
-                    <img class="skills__img" src="assets/img/icons8-bootstrap-480.png" alt="Bootstrap_logo">
-                    <figcaption>Bootstrap</figcaption>
-                </figure>
-                <figure data-aos="fade-up" data-aos-duration="1900">
-                    <img class="skills__img" src="assets/img/tailwind-css-logo.svg" alt="tailwind-css-logo">
-                    <figcaption>Tailwind CSS</figcaption>
-                </figure>
-                <figure data-aos="fade-up" data-aos-duration="2100">
-                    <img class="skills__img" src="assets/img/icons8-php-logo-480.png" alt="php_logo">
-                    <figcaption>PHP</figcaption>
-                </figure>
-                <figure data-aos="fade-up" data-aos-duration="2300">
-                    <img class="skills__img" src="assets/img/icons8-laravel-96.png" alt="Laravel_logo">
-                    <figcaption>Laravel</figcaption>
-                </figure>
-                <figure data-aos="fade-up" data-aos-duration="2500">
-                    <img class="skills__img" src="assets/img/icons8-vue-js-480.png" alt="Vuejs_logo">
-                    <figcaption>Vue</figcaption>
-                </figure>
+    </section>
+    <!--! About section -->
+    <!-- Skills section -->
+    <section class="container skills" id="skills">
+        <h2 class="skills__title section-title" data-aos="fade-right" data-aos-duration="900">Mes Compétences</h2>
+        <div class="skills__content">
+            <div class="skills__description">
+                <h2 class="skills__subtile" data-aos="fade" data-aos-duration="900">Compétences</h2>
+                <ol class="gradient-list">
+                    <li data-aos="fade" data-aos-duration="900">Donner envie à vos futurs clients avec une galerie
+                        photos de vos produits</li>
+                    <li data-aos="fade" data-aos-duration="1100">Créer un site moderne et épuré, qui s'adapte à tous les
+                        écrans</li>
+                    <li data-aos="fade" data-aos-duration="1100">Vous offrir une expérience utilisateur confortable
+                        grâce à des animations sur votre site</li>
+                    <li data-aos="fade" data-aos-duration="1100">Gérer toutes vos réservations depuis une partie
+                        d'administration entièrement personnalisable</li>
+                </ol>
             </div>
-        </div>
-    </div>
-   </section>
-   <!--! Skills section -->
-   <!-- Works section -->
-   <section class="container works" id="works">
-    <h2 class="skills__title section-title" data-aos="fade-up" data-aos-duration="900">Mes Réalisations</h2>
-    <div class="works__content">
-        <div class="work-box">
-            <img src="assets/img/projects/project-1.gif" alt="project-1">
-            <p>Application de gestion d'un lycée - <a target="_blank" href="https://github.com/samankassou/schooladmin">lien github</a></p>
-        </div>
-        <div class="work-box">
-            <img src="assets/img/projects/Porfolio.png" alt="project-2">
-            <p>Un Portfolio Développeur Web - <a target="_blank" href="https://github.com/samankassou/Porflio-v1">lien github</a></p>
-        </div>
-        <div class="work-box">
-            <img src="assets/img/projects/project-2.PNG" alt="project-3">
-            <p>SuperCoin, une Application de Traiding  - <a target="_blank" href="https://github.com/samankassou/supercoin">lien github</a></p>
-        </div>
-    </div>
-   </section>
-   <!--! Works section -->
-   <!-- contact section -->
-   <section class="container contact" id="contact">
-    <h2 class="contact__title section-title" data-aos="fade-up" data-aos-duration="900">Contact</h2> 
-    <div class="contact__content">
-        <div class="contact__description">
-            <h2 class="contact__subtile" data-aos="fade-up" data-aos-duration="900">Adresses</h2>
-            <p class="contact__text" data-aos="fade-up" data-aos-duration="900">Démarrons un projet ensemble, n'hésiter pas à me contacter</p>
-            <div class="contact__adresses">
-                <div class="contact__item" data-aos="fade-up" data-aos-duration="900">
-                    <i class="fas fa-user"></i>
-                    <div>
-                        <h4>Noms</h4>
-                        <p>Samankassou Foulla</p>
-                    </div>
-                </div>
-                <div class="contact__item" data-aos="fade-up" data-aos-duration="900">
-                    <i class="fas fa-map-marker"></i>
-                    <div>
-                        <h4>Adresse</h4>
-                        <p>Garoua, Cameroun</p>
-                    </div>
-                </div>
-                <div class="contact__item" data-aos="fade-up" data-aos-duration="900">
-                    <i class="fas fa-envelope-square"></i>
-                    <div>
-                        <h4>Email</h4>
-                        <p>samankassoufoulla@gmail.com</p>
-                    </div>
-                </div>
-                <div class="contact__item" data-aos="fade-up" data-aos-duration="900">
-                    <i class="fas fa-phone"></i>
-                    <div>
-                        <h4>Téléphone</h4>
-                        <p>+237691565877</p>
-                    </div>
+            <div class="skill__tecnos">
+                <h2 class="skills__subtile" data-aos="fade" data-aos-duration="900">Langages et Technologies</h2>
+                <div class="skills__img-container">
+                    <figure data-aos="fade-up" data-aos-duration="900">
+                        <img class="skills__img" src="assets/img/icons8-html-5-480.png" alt="html5_logo">
+                        <figcaption>HTML 5</figcaption>
+                    </figure>
+                    <figure data-aos="fade-up" data-aos-duration="1100">
+                        <img class="skills__img" src="assets/img/icons8-css3-480.png" alt="css3_logo">
+                        <figcaption>CSS 3</figcaption>
+                    </figure>
+                    <figure data-aos="fade-up" data-aos-duration="1300">
+                        <img class="skills__img" src="assets/img/icons8-javascript-480.png" alt="Javascript_logo">
+                        <figcaption>Javascript</figcaption>
+                    </figure>
+                    <figure data-aos="fade-up" data-aos-duration="1500">
+                        <img class="skills__img" src="assets/img/icons8-jquery-500.png" alt="jquery_logo">
+                        <figcaption>JQuery</figcaption>
+                    </figure>
+                    <figure data-aos="fade-up" data-aos-duration="1700">
+                        <img class="skills__img" src="assets/img/icons8-bootstrap-480.png" alt="Bootstrap_logo">
+                        <figcaption>Bootstrap</figcaption>
+                    </figure>
+                    <figure data-aos="fade-up" data-aos-duration="1900">
+                        <img class="skills__img" src="assets/img/tailwind-css-logo.svg" alt="tailwind-css-logo">
+                        <figcaption>Tailwind CSS</figcaption>
+                    </figure>
+                    <figure data-aos="fade-up" data-aos-duration="2100">
+                        <img class="skills__img" src="assets/img/icons8-php-logo-480.png" alt="php_logo">
+                        <figcaption>PHP</figcaption>
+                    </figure>
+                    <figure data-aos="fade-up" data-aos-duration="2300">
+                        <img class="skills__img" src="assets/img/icons8-laravel-96.png" alt="Laravel_logo">
+                        <figcaption>Laravel</figcaption>
+                    </figure>
+                    <figure data-aos="fade-up" data-aos-duration="2500">
+                        <img class="skills__img" src="assets/img/icons8-vue-js-480.png" alt="Vuejs_logo">
+                        <figcaption>Vue</figcaption>
+                    </figure>
                 </div>
             </div>
         </div>
-        <div class="contact__form">
-            <h2 class="contact__subtile" data-aos="fade-up" data-aos-duration="900">Message</h2>
-            <form>
-                <div class="inline-inputs" data-aos="fade-up" data-aos-duration="900">
+    </section>
+    <!--! Skills section -->
+    <!-- Works section -->
+    <section class="container works" id="works">
+        <h2 class="skills__title section-title" data-aos="fade-up" data-aos-duration="900">Mes Réalisations</h2>
+        <div class="works__content">
+            <div class="work-box">
+                <img src="assets/img/projects/project-1.gif" alt="project-1">
+                <p>Application de gestion d'un lycée - <a target="_blank"
+                        href="https://github.com/samankassou/schooladmin">lien github</a></p>
+            </div>
+            <div class="work-box">
+                <img src="assets/img/projects/Porfolio.png" alt="project-2">
+                <p>Un Portfolio Développeur Web - <a target="_blank"
+                        href="https://github.com/samankassou/Porflio-v1">lien github</a></p>
+            </div>
+            <div class="work-box">
+                <img src="assets/img/projects/project-2.PNG" alt="project-3">
+                <p>SuperCoin, une Application de Traiding - <a target="_blank"
+                        href="https://github.com/samankassou/supercoin">lien github</a></p>
+            </div>
+        </div>
+    </section>
+    <!--! Works section -->
+    <!-- contact section -->
+    <section class="container contact" id="contact">
+        <h2 class="contact__title section-title" data-aos="fade-up" data-aos-duration="900">Contact</h2>
+        <div class="contact__content">
+            <div class="contact__description">
+                <h2 class="contact__subtile" data-aos="fade-up" data-aos-duration="900">Adresses</h2>
+                <p class="contact__text" data-aos="fade-up" data-aos-duration="900">Démarrons un projet ensemble,
+                    n'hésiter pas à me contacter</p>
+                <div class="contact__adresses">
+                    <div class="contact__item" data-aos="fade-up" data-aos-duration="900">
+                        <i class="fas fa-user"></i>
+                        <div>
+                            <h4>Noms</h4>
+                            <p>Samankassou Foulla</p>
+                        </div>
+                    </div>
+                    <div class="contact__item" data-aos="fade-up" data-aos-duration="900">
+                        <i class="fas fa-map-marker"></i>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>Garoua, Cameroun</p>
+                        </div>
+                    </div>
+                    <div class="contact__item" data-aos="fade-up" data-aos-duration="900">
+                        <i class="fas fa-envelope-square"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>samankassoufoulla@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact__item" data-aos="fade-up" data-aos-duration="900">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+237691565877</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact__form">
+                <h2 class="contact__subtile" data-aos="fade-up" data-aos-duration="900">Message</h2>
+                <form>
+                    <div class="inline-inputs" data-aos="fade-up" data-aos-duration="900">
+                        <div class="form-group">
+                            <input id="name" class="input" type="text" placeholder="Votre nom" data-aos="fade-up"
+                                data-aos-duration="900">
+                            <span id="name-error" class="error"></span>
+                        </div>
+                        <div class="form-group">
+                            <input id="email" class="input" type="text" placeholder="Votre email" data-aos="fade-up"
+                                data-aos-duration="900">
+                            <span id="email-error" class="error"></span>
+                        </div>
+                    </div>
                     <div class="form-group">
-                        <input id="name" class="input" type="text" placeholder="Votre nom" data-aos="fade-up" data-aos-duration="900">
-                        <span id="name-error" class="error"></span>
+                        <input id="subject" class="input block" type="text" placeholder="Sujet" data-aos="fade-up"
+                            data-aos-duration="900">
+                        <span id="subject-error" class="error"></span>
                     </div>
                     <div class="form-group">
-                        <input id="email" class="input" type="text" placeholder="Votre email" data-aos="fade-up" data-aos-duration="900">
-                        <span id="email-error" class="error"></span>
+                        <textarea id="body" class="block" cols="30" rows="10" placeholder="Anytime" lang="en"
+                            data-aos="fade-up" data-aos-duration="900"></textarea>
+                        <span id="body-error" class="error"></span>
                     </div>
-                </div>
-                <div class="form-group">
-                    <input id="subject" class="input block" type="text" placeholder="Sujet" data-aos="fade-up" data-aos-duration="900">
-                    <span id="subject-error" class="error"></span>
-                </div>
-                <div class="form-group">
-                    <textarea id="body" class="block" cols="30" rows="10" placeholder="Message" data-aos="fade-up" data-aos-duration="900"></textarea>
-                    <span id="body-error" class="error"></span>
-                </div>
-                <button id="send-email-btn" class="btn" data-aos="fade-up" data-aos-duration="900" data-aos="fade-up" data-aos-duration="900">Envoyer</button>
-            </form>
+                    <button id="send-email-btn" class="btn" data-aos="fade-up" data-aos-duration="900"
+                        data-aos="fade-up" data-aos-duration="900">Envoyer</button>
+                </form>
+            </div>
         </div>
-    </div>
-   </section>
-   <footer class="container" id="footer">
+    </section>
+    <footer class="container" id="footer">
         <p>Créer par <span>Samankassou</span> | &copy; 2021 Tous droits réservés</p>
         <div class="footer__socials">
             <p>Suivez moi sur </p>
@@ -225,10 +255,24 @@
             </div>
         </div>
     </footer>
-   <!--! contact section -->
-   <script src="vendor/gsap/gsap.min.js"></script>
-   <script src="vendor/aos/js/aos.js"></script>
-   <script src="vendor/toastify/toastify.js"></script>
-   <script src="assets/js/main.js"></script>
+    <!--! contact section -->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery-lang-js/js/jquery-lang.js"></script>
+    <script src="vendor/gsap/gsap.min.js"></script>
+    <script src="vendor/aos/js/aos.js"></script>
+    <script src="vendor/toastify/toastify.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+        var lang = new Lang();
+
+        lang.dynamic('en', 'vendor/jquery-lang-js/js/langpack/en.json');
+        lang.dynamic('fr', 'vendor/jquery-lang-js/js/langpack/fr.json');
+
+        lang.init({
+            defaultLang: 'en'
+        });
+    </script>
 </body>
+
 </html>
