@@ -31,3 +31,18 @@ gsap.from(".home__image-box", {
     delay: 1.8,
     y: 30
 });
+
+$(document).ready(function () {
+    $('#scroll-to-top-btn').hide();
+
+    $(document).on('scroll', function (e) {
+        $('.navbar-container').removeClass('active');
+        if ($(document).scrollTop() > 200) {
+            $('.navbar-container').addClass('active');
+            $('#scroll-to-top-btn').fadeIn(2000);
+        } else {
+            $('.navbar-container').removeClass('active');
+            $('#scroll-to-top-btn').fadeOut(2000);
+        }
+    });
+});
