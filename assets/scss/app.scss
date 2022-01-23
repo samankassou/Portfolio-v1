@@ -187,6 +187,7 @@ body {
         img.project-thumb {
             transform: scale(1);
             transition: .25s ease-in-out;
+            object-fit: cover;
         }
 
         .overlay {
@@ -270,7 +271,7 @@ ol.gradient-list {
             content: counter(gradient-counter);
             color: $black;
             display: flex;
-            font: 900 1.5em/1 'Montserrat';
+            font: 900 1.5em/1;
             justify-content: flex-end;
             padding: 0.125em 0.25em;
             z-index: 1;
@@ -291,5 +292,30 @@ ol.gradient-list {
         +li {
             margin-top: 2rem;
         }
+    }
+}
+
+
+.testimonial-card {
+    @extend %boxshadow;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    .name {
+        color: $primary-color;
+        font-weight: bold;
+    }
+
+    .position {
+        font-style: italic;
+    }
+
+    img {
+        height: 60px;
+        width: 60px;
+        object-fit: cover;
     }
 }

@@ -9121,7 +9121,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 /*** EXTEND ***/
 /* box-shadow */
-.project-card, .skills__img:hover, .navbar-container, #scroll-to-top-btn, ol.gradient-list > li, ol.gradient-list > li::before {
+.project-card, .skills__img:hover, .navbar-container, #scroll-to-top-btn, ol.gradient-list > li, ol.gradient-list > li::before, .testimonial-card {
   -webkit-box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
           box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
 }
@@ -9297,6 +9297,8 @@ body {
           transform: scale(1);
   -webkit-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #portfolio figure .overlay {
@@ -9383,7 +9385,7 @@ ol.gradient-list > li::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font: 900 1.5em/1 'Montserrat';
+  font: 900 1.5em/1;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -9433,5 +9435,31 @@ ol.gradient-list > li:nth-child(10n+10):before {
 
 ol.gradient-list > li + li {
   margin-top: 2rem;
+}
+
+.testimonial-card {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.testimonial-card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.testimonial-card .name {
+  color: #0cad8d;
+  font-weight: bold;
+}
+
+.testimonial-card .position {
+  font-style: italic;
+}
+
+.testimonial-card img {
+  height: 60px;
+  width: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=app.css.map */
