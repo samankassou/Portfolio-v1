@@ -109,6 +109,10 @@ body {
     line-height: 2 !important;
 }
 
+.text-height-3 {
+    line-height: 2.5 !important;
+}
+
 .home-banner {
     padding-top: 3rem !important;
 
@@ -164,17 +168,8 @@ body {
 
 #portfolio {
     figure {
-        display: block;
-        position: relative;
         overflow: hidden;
-        border-radius: 12px;
         height: 250px;
-
-        h1 {
-            font-size: 1rem;
-            text-align: center;
-            margin-bottom: 2rem;
-        }
 
         &:hover {
 
@@ -182,6 +177,11 @@ body {
             figcaption {
                 opacity: 1;
             }
+
+            img.project-thumb {
+                transform: scale(1.1);
+            }
+
         }
 
         img.project-thumb {
@@ -208,11 +208,6 @@ body {
             padding: 0rem 3rem;
             color: #fff;
             z-index: 1;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
             opacity: 0;
             transition: .45s ease-in-out;
 
