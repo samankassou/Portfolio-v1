@@ -7,6 +7,7 @@
     <title>Portfolio - Sam</title>
     <meta name="description"
         content="The portfolio of Samankassou, a full-stack web developper, Laravel and Vuejs are Frameworks that I work with">
+    <link rel="shortcut icon" href="assets/img/logo-light.jpg" type="image/x-icon">
     <link rel="stylesheet" href="vendor/aos/css/aos.css">
     <link rel="stylesheet" href="vendor/toastify/toastify.css">
     <link rel="stylesheet" href="vendor/fontawesome/css/fontawesome.min.css">
@@ -15,13 +16,15 @@
         type="text/css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="0" style="position: relative;">
     <div id="top"></div>
     <!-- Navbar -->
     <div class="container-fluid bg-light navbar-container">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-md py-3">
-                <a class="navbar-brand" href="/">S</a>
+                <a class="navbar-brand" href="/">
+                    <img src="assets/img/logo-light.jpg" style="width: 30px; height: 30px;">
+                </a>
 
                 <button class="navbar-toggler" type="button" id="navbar-toggler" data-toggle="collapse"
                     data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false"
@@ -44,9 +47,8 @@
 
                 <div class="collapse navbar-collapse" id="main-navbar">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#about" lang="en">About me <span
-                                    class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" lang="en">About me</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#skills" lang="en">My skills</a>
@@ -83,12 +85,16 @@
             <div class="row py-4 my-4">
                 <div class="col-12 col-md-6 mb-5 mb-md-0 text-height-2">
                     <h3 lang="en">Hello, I am</h3>
-                    <h2 class="name">Samankassou</h2>
-                    <p><span>Web developer</span> and .
-                        J'aide votre entreprise à avoir une identité numérique.
+                    <h1 class="name font-weight-bold">Samankassou</h1>
+                    <p><strong>Laravel web developer</strong> and friendly problem solver.
                     </p>
-                    <a target="_blank" href="assets/Samankassou_CV_fr.pdf" class="btn btn-primary px-4 py-2"
-                        lang="en">My resume <i class="fas fa-download"></i></a>
+                    <div class="row mt-5">
+                        <div class="col-12">
+                            <a target="_blank" href="assets/Samankassou_CV_fr.pdf" class="btn btn-primary px-4 py-2"
+                                lang="en">My resume <i class="fas fa-download"></i></a>
+                            <a href="#portfolio" class="btn btn-outline-primary px-4 py-2" lang="en">Portfolio</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 mt-5 mt-md-0">
                     <div class="row justify-content-center justify-content-md-end">
@@ -328,30 +334,27 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <h2 class="text-primary" data-aos="fade-up" data-aos-duration="900">Message</h2>
-                    <form class="contact__form">
+                    <form class="contact__form" id="contact-form" method="post">
                         <div class="row" data-aos="fade-up" data-aos-duration="900">
                             <div class="form-group col-12 col-md-6">
-                                <input id="name" class="input block" type="text" placeholder="Your name" lang="en"
-                                    data-aos="fade-up" data-aos-duration="900">
-                                <span id="name-error" class="error"></span>
+                                <input id="name" name="name" class="input block" type="text" placeholder="Your name"
+                                    lang="en" data-aos="fade-up" data-aos-duration="900" required>
                             </div>
                             <div class="form-group col-12 col-md-6">
-                                <input id="email" class="input block" type="text" placeholder="Your email" lang="en"
-                                    data-aos="fade-up" data-aos-duration="900">
-                                <span id="email-error" class="error"></span>
+                                <input id="email" name="email" class="input block" type="email" placeholder="Your email"
+                                    lang="en" data-aos="fade-up" data-aos-duration="900" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <input id="subject" class="input block" type="text" placeholder="Subject" lang="en"
-                                data-aos="fade-up" data-aos-duration="900">
-                            <span id="subject-error" class="error"></span>
+                            <input id="subject" name="subject" class="input block" type="text" placeholder="Subject"
+                                lang="en" data-aos="fade-up" data-aos-duration="900" required>
                         </div>
                         <div class="form-group">
-                            <textarea id="body" class="block" cols="30" rows="10" placeholder="Message..." lang="en"
-                                data-aos="fade-up" data-aos-duration="900"></textarea>
-                            <span id="body-error" class="error"></span>
+                            <textarea id="body" name="message" class="block" cols="30" rows="10"
+                                placeholder="Message..." lang="en" data-aos="fade-up" data-aos-duration="900"
+                                required></textarea>
                         </div>
-                        <button id="send-email-btn" class="btn btn-primary px-5 py-2" data-aos="fade-up"
+                        <button id="send-email-btn" type="submit" class="btn btn-primary px-5 py-2" data-aos="fade-up"
                             data-aos-duration="900" data-aos="fade-up" data-aos-duration="900" lang="en">Send <i
                                 class="fas fa-paper-plane"></i></button>
                     </form>
@@ -387,6 +390,7 @@
     <!-- End Footer -->
 
     <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/jquery-validate/jquery.validate.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="vendor/jquery-lang-js/js/js.cookie.js"></script>
     <script src="vendor/jquery-lang-js/js/jquery-lang.js"></script>
@@ -424,7 +428,11 @@
                     return false;
                 }
             });
+
+            $('#contact-form').validate();
         });
+
+
 
         function changeLanguage(lang, elt) {
             window.lang.change(lang);
