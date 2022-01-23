@@ -17,6 +17,12 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="0" style="position: relative;">
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <img src="assets/img/preloader.gif" alt="Preloader">
+    </div>
+
     <div id="top"></div>
     <!-- Navbar -->
     <div class="container-fluid bg-light navbar-container">
@@ -507,6 +513,9 @@
         });
 
         $(document).ready(function () {
+
+            $('#preloader').fadeOut(1000);
+
             $(document).on('click', '.lang-link', function (e) {
                 e.preventDefault();
                 let elt = $(this);
